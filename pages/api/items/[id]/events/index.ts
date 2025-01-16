@@ -15,7 +15,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
                 });
                 res.status(200).json(events);
             } catch (error) {
-                res.status(500).json({ error: "error fetching events" });
+                res.status(500).json({ error: "error fetching events " + error });
             }
             break;
         case "POST":
@@ -30,7 +30,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
                 });
                 res.status(201).json(event);
             } catch (error) {
-                res.status(500).json({ error: "error creating event" });
+                res.status(500).json({ error: "error creating event " + error });
             }
             break;
         default:
