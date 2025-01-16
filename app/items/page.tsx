@@ -100,10 +100,6 @@ export default function ItemListPage() {
                   </td>
                   <td className="px-6 py-4 whitespace-nowrap">
                     <div className="flex items-center">
-                      <div 
-                        className="h-4 w-4 rounded-full mr-2 border border-gray-200" 
-                        style={{ backgroundColor: item.color }}
-                      />
                       <span className="text-sm text-gray-900">{item.color}</span>
                     </div>
                   </td>
