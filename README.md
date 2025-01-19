@@ -91,6 +91,10 @@ npm start
 ```
 
 ## How to run with docker 
+## please make sure .env file (provided separately over the email) is placed at root level
+
+## Just a quick note: the .env file is currently being copied into the Docker image for convenience. ## However, in an ideal setup, the .env file should not be included in the image; instead, it should ## be supplied at runtime when starting the container.
+
 docker build -t supply-chain .
 docker run -p 3000:3000 supply-chain
 
